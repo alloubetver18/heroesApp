@@ -1,0 +1,55 @@
+<h1>Listado de Héroes</h1>
+<mat-divider></mat-divider>
+<br />
+
+<section class="box d-flex flex-row flex-wrap justify-content-around">
+  <section class="subbox" *ngFor="let heroe of heroes">
+    <app-heroe-tarjeta [hero]="heroe"></app-heroe-tarjeta>
+  </section>
+</section>
+
+<!-- <section
+  fxLayout="row wrap"
+  fxlayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="20px"
+>
+  <section
+    fxFlex="20"
+    fxFlex.lg="15"
+    fxFlex.sm="30"
+    *ngFor="let item of heroes"
+  >
+    <mat-card *ngFor="let heroe of heroes">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ heroe.superhero }}</mat-card-title>
+        <mat-card-subtitle>{{ heroe.alter_ego }}</mat-card-subtitle>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="assets/heroes/{{ heroe.id }}.jpg"
+        alt="Photo of {{ heroe.superhero }}"
+      />
+      <mat-card-content>
+        <h3>{{ heroe.publisher }}</h3>
+        <p>
+          <strong>primera aparición: {{ heroe.first_appearance }}</strong>
+          <br />
+          <strong>Personajes: </strong> {{ heroe.characters }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button color="warn">Leer mas...</button>
+        <button mat-button color="info">Editar</button>
+      </mat-card-actions>
+    </mat-card>
+  </section>
+</section> -->
+
+<!-- Mostrar en una lista no ordenada el listado del nombre de todos los superheroes. Sería el campo 'superhero' de la tabla de la base de datos -->
+
+<!-- <li *ngFor="let heroe of heroes" class="list-group-item list-group-item-action">
+  {{ heroe.superhero }}
+</li>
+ -->
